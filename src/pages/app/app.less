@@ -88,3 +88,102 @@
 ::-webkit-scrollbar{
   display: none;
 }
+.popup{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  .popup_box{
+    width: 270px;
+    height: 225px;
+    border-radius: 10px;
+    position: absolute;
+    left: 52.5px;
+    top: 293.5px;
+    background-color: #fff;
+    img{
+      width: 165px;
+      height: 121px;
+      margin: 10px 0 0 54px;
+    }
+    p{
+      color: #a5a5a5;
+      font-size: 17px;
+      text-align: center;
+      margin: 1px 0 24px; 
+      line-height: 18px;
+    }
+    div{
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      background-color: #ff6762;
+      width: 220px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 3px;
+      margin: 5px 25px 15px;
+    }
+    i{
+      display: inline-block;
+      width: 40px;
+      height: 32px;
+      background-image: url(https://s3.pstatp.com/growth/mobile_list/image/popup_banner_close_e6f62910.png);
+      background-size: 17px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+.nopopup{
+  display: none;
+}
+.home_head{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+.foot{
+  position: fixed;
+  bottom: 0;
+  height:50px;
+  line-height: 50px;
+  background-color: #fff;
+  padding: 0 15px;
+  font-size: 14px;
+  div{
+    display: inline-block;
+  }
+  .foot_appIcon{
+    width: 36px;
+    height: 36px;
+    background-image: url(https://s3.pstatp.com/growth/fe_sdk/image/banner_toutiao_icon_bce0b302.png);
+    background-size: 100% 100%;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    margin-top: 7px;
+  }
+  span{
+    position: relative;
+    top: -13px;
+    margin-left: 8px;
+  }
+  .foot_toApp{
+    height: 28px;
+    line-height: 28px;
+    padding: 0 22px;
+    color: #fff;
+    font-weight: 500;
+    background-image: linear-gradient(90deg,red,#ff5050);
+    border-radius: 12px;
+    position: relative;
+    top: -12px;
+    margin-left: 171px;
+  }
+}

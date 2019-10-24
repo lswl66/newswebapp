@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class PicturZero extends React.Component{
     render(){
@@ -18,7 +19,10 @@ class PicturZero extends React.Component{
             )
         });
         return(
-            <div className="news_item">{itemlist}</div>
+            <Link to="/newscontent" className="tocontent">
+                <div className="news_item">{itemlist}</div>
+            </Link>
+
         )
     }
 }

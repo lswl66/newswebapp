@@ -11,10 +11,17 @@
  **************************************************************************************/
 
 import { ADD_ONE } from '@redux/actionTypes'
+import { CHANGE_ONE } from '@redux/actionTypes'
 
 export const addOne = id => ({
   type: ADD_ONE,
   payload: {
     id: id
+  }
+})
+export const changeOne = id => ({
+  type: CHANGE_ONE,
+  payload: {
+    channelsid: id
   }
 })

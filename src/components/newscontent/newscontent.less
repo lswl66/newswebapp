@@ -1,0 +1,172 @@
+.top{
+    position: fixed;
+    top: 0;
+    height:50px;
+    z-index: 1;
+    line-height: 50px;
+    background-color: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    div{
+      display: inline-block;
+    }
+    .top_appIcon{
+      width: 36px;
+      height: 36px;
+      background-image: url(https://s3.pstatp.com/growth/fe_sdk/image/banner_toutiao_icon_bce0b302.png);
+      background-size: 100% 100%;
+      border: 1px solid #eee;
+      border-radius: 7px;
+      margin-top: 7px;
+    }
+    span{
+      position: relative;
+      top: -15px;
+      margin-left: 8px;
+    }
+    .top_toApp{
+      height: 28px;
+      line-height: 28px;
+      padding: 0 22px;
+      color: #fff;
+      font-weight: 500;
+      background-image: linear-gradient(90deg,red,#ff5050);
+      border-radius: 12px;
+      position: relative;
+      top: -15px;
+      margin-left: 171px;
+    }
+  }
+.main{
+    color: #222;
+    margin-top: 61px;
+    position: relative;
+    .news_title{
+        font-size: 24px;
+        line-height: 34px;
+        padding: 0 14px;
+    }
+    .news_author{
+        padding: 10px 14px 0;
+        div{
+            display: inline-block;
+        }
+        .news_author_left{
+            img{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+                margin: 3px 5px 0 0;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 700;
+                position: relative;
+                top: -6px;
+                left: 1px;
+            }
+            i{
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(https://s1.pstatp.com/growth/mobile_detail/image/v-0.tl0z9x5L.png);
+                background-size: 100%;
+                position: relative;
+                top: -5px;
+                left: 7px;
+            }
+        }
+        .news_author_right{
+            position: relative;
+            top: -7px;
+            right: -144px;
+            color: #999;
+            font-size: 12px;
+        }
+    }
+    .news_inner{
+        padding: 0 14px;
+        p{
+            font-size: 18px;
+            line-height: 31.68px;
+            margin-top: 17px;
+            letter-spacing: .6px;
+        }
+        img{
+            width: 100%;
+        }
+        .app_extension1{
+            height: 42px;
+            line-height: 42px;
+            border: 1px solid rgba(228,228,228,0.6);
+            font-size: 14px;
+            text-align: center;
+            background-color: #fbfbfb;
+            color: #505050;
+            i{
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                position: relative;
+                top: 3px;
+                background-image: url(https://s1.pstatp.com/growth/mobile_detail/image/image-arrow.HNPrnYXh.png);
+                background-repeat: no-repeat;
+                background-position: -1px center;
+                background-size: contain;
+            }
+        }
+    }
+    .app_extension2{
+        position: absolute;
+        top: 800px;
+        width: 100%;
+        .app_extension2_top{
+            position: relative;
+            top: 8px;
+            height: 78px;
+            background-image: linear-gradient(-180deg, rgba(255,255,255,0) 0, #FFFFFF 100%);
+            text-align: center;
+            i{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-image: url(https://s1.pstatp.com/growth/mobile_detail/image/vwap_arrow_down.ky914xBY.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-top: 32px;
+                position: relative;
+            }
+        }
+        .app_extension2_bottom{
+                color:#fff;
+                font-size: 15px;
+                background-color: #fff;
+                position: relative;
+                top: 12px;
+                height: 40px;
+                span{
+                    display: inline-block;
+                    height: 37px;
+                    width: 347px;
+                    line-height: 37px;
+                    border-radius: 30px;
+                    position: relative;
+                    left: 14px;
+                    text-align: center;
+                    background-image: linear-gradient(to right, #ff0000, #ff5050);
+                }
+        }
+    }
+}
+.hide{
+    display: none;
+}
+.animation{
+    -webkit-animation:mymove 300ms infinite alternate;
+}
+@keyframes mymove{
+    from {top:0px;}
+    to {top:8px;}
+}

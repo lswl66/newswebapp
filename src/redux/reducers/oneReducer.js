@@ -11,6 +11,7 @@
  **************************************************************************************/
 
 import { ADD_ONE } from '../actionTypes'
+import { CHANGE_ONE } from '../actionTypes'
 
 
 const initState = {}
@@ -22,6 +23,12 @@ export default function(state = initState, action) {
     case ADD_ONE: {
       return {
         id: action.payload.id
+      }
+    }
+    case CHANGE_ONE: {
+      console.log(action)
+      return {
+        id: action.payload.channelsid
       }
     }
     default:
