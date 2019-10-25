@@ -1,5 +1,9 @@
 import React from 'react'
 import './newscontent.less'
+import {Link} from 'react-router-dom'
+import PicturOne from '@components/picturone/picturone'
+import PicturZero from '@components/picturzero/picturzero'
+import PicturThree from '@components/picturthree/picturthree'
 
 class NewsContent extends React.Component{
     constructor(props){
@@ -14,12 +18,300 @@ class NewsContent extends React.Component{
         })
     }
     render(){
+        let listAbout = [
+            {
+                list:[{
+                    title:'谁有比较好的项目 或者好的产品 可以一起在不同区域推广的',
+                    img1:'',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'靓泛创作',
+                    comment:'111条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:0
+            },
+            {
+                list:[{
+                    title:'38岁小伙报恩48岁老板娘，大姐上台，涂磊直呼-好漂亮啊！有气质',
+                    img1:'http://p3.pstatp.com/list/p1901/gs69uoigir8h6obsmamb00002e40020v02002b9005',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'乐乐娱乐18',
+                    comment:'23条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:1
+            },
+            {
+                list:[{
+                    title:'秋冬穿什么鞋既保暖又时髦？学会这几种技巧，帅气还是淑女都不难',
+                    img1:'http://p3.pstatp.com/list/pgc-image/3874c14794cd4c279f4fa66e02812d24',
+                    img2:'http://p1.pstatp.com/list/pgc-image/d7f314814ac2428db0f4d3cde03726d5',
+                    img3:'http://p3.pstatp.com/list/pgc-image/1efe15fae2fe4d7fb9d733e472c3a83b',
+                    app:'打开APP',
+                    author:'时尚扒褂',
+                    comment:'11条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:3
+            },
+            {
+                list:[{
+                    title:'谁有比较好的项目 或者好的产品 可以一起在不同区域推广的',
+                    img1:'',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'靓泛创作',
+                    comment:'111条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:0
+            },
+            {
+                list:[{
+                    title:'38岁小伙报恩48岁老板娘，大姐上台，涂磊直呼-好漂亮啊！有气质',
+                    img1:'http://p3.pstatp.com/list/p1901/gs69uoigir8h6obsmamb00002e40020v02002b9005',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'乐乐娱乐18',
+                    comment:'23条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:1
+            },
+            {
+                list:[{
+                    title:'秋冬穿什么鞋既保暖又时髦？学会这几种技巧，帅气还是淑女都不难',
+                    img1:'http://p3.pstatp.com/list/pgc-image/3874c14794cd4c279f4fa66e02812d24',
+                    img2:'http://p1.pstatp.com/list/pgc-image/d7f314814ac2428db0f4d3cde03726d5',
+                    img3:'http://p3.pstatp.com/list/pgc-image/1efe15fae2fe4d7fb9d733e472c3a83b',
+                    app:'打开APP',
+                    author:'时尚扒褂',
+                    comment:'11条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:3
+            },
+            {
+                list:[{
+                    title:'谁有比较好的项目 或者好的产品 可以一起在不同区域推广的',
+                    img1:'',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'靓泛创作',
+                    comment:'111条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:0
+            },
+            {
+                list:[{
+                    title:'38岁小伙报恩48岁老板娘，大姐上台，涂磊直呼-好漂亮啊！有气质',
+                    img1:'http://p3.pstatp.com/list/p1901/gs69uoigir8h6obsmamb00002e40020v02002b9005',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'乐乐娱乐18',
+                    comment:'23条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:1
+            },
+            {
+                list:[{
+                    title:'秋冬穿什么鞋既保暖又时髦？学会这几种技巧，帅气还是淑女都不难',
+                    img1:'http://p3.pstatp.com/list/pgc-image/3874c14794cd4c279f4fa66e02812d24',
+                    img2:'http://p1.pstatp.com/list/pgc-image/d7f314814ac2428db0f4d3cde03726d5',
+                    img3:'http://p3.pstatp.com/list/pgc-image/1efe15fae2fe4d7fb9d733e472c3a83b',
+                    app:'打开APP',
+                    author:'时尚扒褂',
+                    comment:'11条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:3
+            },
+            {
+                list:[{
+                    title:'谁有比较好的项目 或者好的产品 可以一起在不同区域推广的',
+                    img1:'',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'靓泛创作',
+                    comment:'111条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:0
+            },
+            {
+                list:[{
+                    title:'38岁小伙报恩48岁老板娘，大姐上台，涂磊直呼-好漂亮啊！有气质',
+                    img1:'http://p3.pstatp.com/list/p1901/gs69uoigir8h6obsmamb00002e40020v02002b9005',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'乐乐娱乐18',
+                    comment:'23条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:1
+            },
+            {
+                list:[{
+                    title:'秋冬穿什么鞋既保暖又时髦？学会这几种技巧，帅气还是淑女都不难',
+                    img1:'http://p3.pstatp.com/list/pgc-image/3874c14794cd4c279f4fa66e02812d24',
+                    img2:'http://p1.pstatp.com/list/pgc-image/d7f314814ac2428db0f4d3cde03726d5',
+                    img3:'http://p3.pstatp.com/list/pgc-image/1efe15fae2fe4d7fb9d733e472c3a83b',
+                    app:'打开APP',
+                    author:'时尚扒褂',
+                    comment:'11条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:3
+            },
+            {
+                list:[{
+                    title:'谁有比较好的项目 或者好的产品 可以一起在不同区域推广的',
+                    img1:'',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'靓泛创作',
+                    comment:'111条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:0
+            },
+            {
+                list:[{
+                    title:'38岁小伙报恩48岁老板娘，大姐上台，涂磊直呼-好漂亮啊！有气质',
+                    img1:'http://p3.pstatp.com/list/p1901/gs69uoigir8h6obsmamb00002e40020v02002b9005',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'乐乐娱乐18',
+                    comment:'23条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:1
+            },
+            {
+                list:[{
+                    title:'秋冬穿什么鞋既保暖又时髦？学会这几种技巧，帅气还是淑女都不难',
+                    img1:'http://p3.pstatp.com/list/pgc-image/3874c14794cd4c279f4fa66e02812d24',
+                    img2:'http://p1.pstatp.com/list/pgc-image/d7f314814ac2428db0f4d3cde03726d5',
+                    img3:'http://p3.pstatp.com/list/pgc-image/1efe15fae2fe4d7fb9d733e472c3a83b',
+                    app:'打开APP',
+                    author:'时尚扒褂',
+                    comment:'11条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:3
+            },
+            {
+                list:[{
+                    title:'谁有比较好的项目 或者好的产品 可以一起在不同区域推广的',
+                    img1:'',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'靓泛创作',
+                    comment:'111条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:0
+            },
+            {
+                list:[{
+                    title:'38岁小伙报恩48岁老板娘，大姐上台，涂磊直呼-好漂亮啊！有气质',
+                    img1:'http://p3.pstatp.com/list/p1901/gs69uoigir8h6obsmamb00002e40020v02002b9005',
+                    img2:'',
+                    img3:'',
+                    app:'打开APP',
+                    author:'乐乐娱乐18',
+                    comment:'23条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:1
+            },
+            {
+                list:[{
+                    title:'秋冬穿什么鞋既保暖又时髦？学会这几种技巧，帅气还是淑女都不难',
+                    img1:'http://p3.pstatp.com/list/pgc-image/3874c14794cd4c279f4fa66e02812d24',
+                    img2:'http://p1.pstatp.com/list/pgc-image/d7f314814ac2428db0f4d3cde03726d5',
+                    img3:'http://p3.pstatp.com/list/pgc-image/1efe15fae2fe4d7fb9d733e472c3a83b',
+                    app:'打开APP',
+                    author:'时尚扒褂',
+                    comment:'11条评论',
+                    label:'',
+                    time:''   
+                }],
+                type:3
+            },
+        ];
+        let arrAbout = listAbout.map((item,index)=>{
+            if(item['type'] == 0){
+                return(
+                    <PicturZero listitem={item['list']} key={index}></PicturZero>
+                )
+            }else if(item['type'] == 1){
+                return(
+                    <PicturOne listitem={item['list']} key={index}></PicturOne>
+                )
+            }else{
+                return(
+                    <PicturThree listitem={item['list']} key={index}></PicturThree>
+                )
+            }
+        });
+        let searchList = [
+            '宇宙神式运载火箭价格',
+            '卫星运载火箭介绍',
+            '土星5号运载火箭介绍',
+            '银河3号运载火箭介绍',
+            '土星1号运载火箭介绍',
+            '银河3号运载火箭价格',
+            '卫星运载火箭是什么',
+            '宇宙二号运载火箭价格',
+            '猎鹰5号运载火箭介绍',
+            '土星5号运载火箭价格',
+        ]
+        let searchArr = searchList.map((item,index)=>{
+            return(
+                <span className='search_item'>{item}</span>
+            )
+        });
         return(
             <div className='news_content'>
                 <div className='top'>
                     <div className='top_appIcon'></div>
                     <span>今日头条</span>
-                    <div className='top_toApp'>打开</div>
+                    <Link to='/extension'>
+                        <div className='top_toApp'>打开</div>
+                    </Link>
                 </div>
                 <div className='main'>
                     <div className='news_title'>
@@ -43,10 +335,12 @@ class NewsContent extends React.Component{
                             据报道，马斯克在社交网站上发文称，“通过Starlink卫星发送了这条推文。”随后，他又发布了一条称，“哇，它成功了。”
                         </p>
                         <img src='https://p3.pstatp.com/large/pgc-image/RfcNsYSX72puM'/>
-                        <div className='app_extension1'>
-                            打开今日头条，查看更多图片
-                            <i></i>
-                        </div>
+                        <Link to='/extension'>
+                            <div className='app_extension1'>
+                                打开今日头条，查看更多图片
+                                <i></i>
+                            </div>
+                        </Link>
                         <p>
                             图片来源：马斯克社交网站账户截图。
                         </p>
@@ -69,15 +363,37 @@ class NewsContent extends React.Component{
                         <div className='app_extension2_top'>
                             <i className='animation'></i>
                         </div>
-                        <div className='app_extension2_bottom'>
-                            <span>打开APP</span>
+                        <Link to='/extension'>
+                            <div className='app_extension2_bottom'>
+                                <span>打开APP</span>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+                <div className='about'>
+                    <div className='willlike'>
+                        <div className='about_title'>
+                            <i></i>
+                            猜你喜欢
+                        </div>
+                        {arrAbout}
+                    </div>
+                    <div className='search_about'>
+                        <div className='about_title'>
+                            <i></i>
+                            搜索
+                        </div>
+                        <div className='search_about_inner'>
+                            {searchArr}
                         </div>
                     </div>
                 </div>
                 <div className='foot'>
                     <div className='foot_appIcon'></div>
                     <span>今日头条</span>
-                    <div className='foot_toApp'>打开</div>
+                    <Link to='/extension'>
+                        <div className='foot_toApp'>打开</div>
+                    </Link>
                 </div>
             </div>
         )

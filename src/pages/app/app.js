@@ -149,20 +149,23 @@ class App extends React.Component {
           <div className="popup_box">
             <img src="https://s3a.pstatp.com/growth/mobile_list/image/popup_banner_6006ac97.png"/>
             <p>已加载好您感兴趣的头条</p>
-            <div>立即打开</div>
+            <Link to='extension' className='toApp'>
+              <div>立即打开</div>
+            </Link>
             <i onClick={this.clickme.bind(this)}></i>
           </div>
         </div>
         <div className='foot'>
           <div className='foot_appIcon'></div>
           <span>今日头条</span>
-          <div className='foot_toApp'>打开</div>
+          <Link to='extension'>
+            <div className='foot_toApp'>打开</div>
+          </Link>
         </div>
       </div>
     )
   }
 }
-
 const mapStateToProps =  state =>{
   console.log(state)
   let id = state.oneReducer.id

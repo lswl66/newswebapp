@@ -11,6 +11,7 @@ class PicturOne extends React.Component{
                         <div className="news_title1">
                             {item['title']}
                             <div className="news_about">
+                                <span className="app_extension">{item['app']}</span>
                                 <span className={item['label'] == '' ? '':'news_label'}>{item['label']}</span>
                                 <span className="news_author">{item['author']}</span>
                                 <span className="news_comment">{item['comment']}</span>

@@ -54,7 +54,8 @@ class Demo extends React.Component {
             time:'3分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -69,7 +70,8 @@ class Demo extends React.Component {
             time:'5分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -84,7 +86,8 @@ class Demo extends React.Component {
             time:'',
             img1:'https://p3.pstatp.com/list/pgc-image/Rd3aFMyH4BxQmi',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:1
@@ -99,7 +102,8 @@ class Demo extends React.Component {
             time:'10分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -114,7 +118,8 @@ class Demo extends React.Component {
             time:'10分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -129,7 +134,8 @@ class Demo extends React.Component {
             time:'12分钟前',
             img1:'https://p3.pstatp.com/list/pgc-image/RRUyWqV6XTTKqE',
             img2:'https://p3.pstatp.com/list/pgc-image/RdKn7Ed54fq3du',
-            img3:'https://p3.pstatp.com/list/pgc-image/RfQdvKK9QJC2sB'
+            img3:'https://p3.pstatp.com/list/pgc-image/RfQdvKK9QJC2sB',
+            app:''
           },
         ],
         type:3
@@ -144,7 +150,8 @@ class Demo extends React.Component {
             time:'',
             img1:'https://p3.pstatp.com/list/pgc-image/RfcNsYSX72puM',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:1
@@ -159,7 +166,8 @@ class Demo extends React.Component {
             time:'3分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -174,7 +182,8 @@ class Demo extends React.Component {
             time:'5分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -189,7 +198,8 @@ class Demo extends React.Component {
             time:'',
             img1:'https://p3.pstatp.com/list/pgc-image/Rd3aFMyH4BxQmi',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:1
@@ -204,7 +214,8 @@ class Demo extends React.Component {
             time:'10分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -219,7 +230,8 @@ class Demo extends React.Component {
             time:'10分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -234,7 +246,8 @@ class Demo extends React.Component {
             time:'12分钟前',
             img1:'https://p3.pstatp.com/list/pgc-image/RRUyWqV6XTTKqE',
             img2:'https://p3.pstatp.com/list/pgc-image/RdKn7Ed54fq3du',
-            img3:'https://p3.pstatp.com/list/pgc-image/RfQdvKK9QJC2sB'
+            img3:'https://p3.pstatp.com/list/pgc-image/RfQdvKK9QJC2sB',
+            app:''
           },
         ],
         type:3
@@ -249,7 +262,8 @@ class Demo extends React.Component {
             time:'',
             img1:'https://p3.pstatp.com/list/pgc-image/RfcNsYSX72puM',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:1
@@ -264,7 +278,8 @@ class Demo extends React.Component {
             time:'3分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -279,7 +294,8 @@ class Demo extends React.Component {
             time:'5分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -294,7 +310,8 @@ class Demo extends React.Component {
             time:'',
             img1:'https://p3.pstatp.com/list/pgc-image/Rd3aFMyH4BxQmi',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:1
@@ -309,7 +326,8 @@ class Demo extends React.Component {
             time:'10分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -324,7 +342,8 @@ class Demo extends React.Component {
             time:'10分钟前',
             img1:'',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:0
@@ -339,7 +358,8 @@ class Demo extends React.Component {
             time:'12分钟前',
             img1:'https://p3.pstatp.com/list/pgc-image/RRUyWqV6XTTKqE',
             img2:'https://p3.pstatp.com/list/pgc-image/RdKn7Ed54fq3du',
-            img3:'https://p3.pstatp.com/list/pgc-image/RfQdvKK9QJC2sB'
+            img3:'https://p3.pstatp.com/list/pgc-image/RfQdvKK9QJC2sB',
+            app:''
           },
         ],
         type:3
@@ -354,7 +374,8 @@ class Demo extends React.Component {
             time:'',
             img1:'https://p3.pstatp.com/list/pgc-image/RfcNsYSX72puM',
             img2:'',
-            img3:''
+            img3:'',
+            app:''
           },
         ],
         type:1

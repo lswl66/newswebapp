@@ -18,6 +18,7 @@ import NewsContent from '@components/newscontent/newscontent'
 import SearchWindow from '@components/searchwindow/searchwindow'
 import SearchPage from '@components/searchpage/searchpage'
 import Channels from '@components/channels/channels'
+import Extension from '@components/extension/extension'
 
 class Routes extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class Routes extends React.Component {
         <Route path="/searchwindow" component={ SearchWindow }></Route>
         <Route path="/searchpage" component={ SearchPage }></Route>
         <Route path="/channels" component={ Channels }></Route>
+        <Route path="/extension" component={ Extension }></Route>
       </Router>
     )
   }

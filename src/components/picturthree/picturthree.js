@@ -16,6 +16,7 @@ class PicturThree extends React.Component{
                         <img src={item['img3']}/>
                     </div>
                     <div className="news_about">
+                        <span className="app_extension">{item['app']}</span>
                         <span className={item['label'] == '' ? '':'news_label'}>{item['label']}</span>
                         <span className="news_author">{item['author']}</span>
                         <span className="news_comment">{item['comment']}</span>
